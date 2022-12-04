@@ -11,11 +11,11 @@ def main(targets):
         ## Check which dataset, make sure its valid
         ## Check which version (coarse or fine), make sure its valid
         if len(targets) != 3:
-            sys.exit("Error Occured. Run -> python run.py [20news, NYT] [coarse, fine]")
+            sys.exit("Error Occured. Run -> python run.py data [20news, NYT] [coarse, fine]")
         dataset = targets[1]
         grained = targets[2]
         if dataset not in ['20news', 'nyt']:
-            sys.exit('No Dataset {} Found. Make sure you are specifying exactly \'20news\' or \'NYT\'.'.format(dataset))
+            sys.exit('No Dataset {} Found. Make sure you are specifying exactly \'20news\' or \'nyt\'.'.format(dataset))
         if grained not in ['fine', 'coarse']:
             sys.exit('No Grainularity {} Found. Only coarse and fine are supported.'.format(grained))
         data_dir = '/data/{}/{}/df.pkl'.format(dataset, grained)
