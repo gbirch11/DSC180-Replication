@@ -28,3 +28,5 @@ Example commands include: \
 ``` python run.py data nyt coarse ``` \
 ``` python run.py data 20news fine ``` \\
 
+## File Structure Rundown
+**data** 
