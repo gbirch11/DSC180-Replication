@@ -13,7 +13,7 @@ Each dataset should contain following files:
       * MUST be named seedwords.json
 
 ## Running the Project
-To run this project, run command;
+To run this project, execute the following command;
 ```
 python run.py [test | data] [dataset] [grain]
 ```
