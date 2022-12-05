@@ -15,8 +15,16 @@
 ## Running the Project
 To run this project, run command;
 ```
-python run.py [test] [data] [dataset] [model]
+python run.py [test] [data] [dataset] 
 ```
-Note: if running ```python run.py test``` no dataset or model is to be specified.
-If running ``python run.py data``` ONLY datasets of **nyt** and **20news** are supported.
-models of **tfidf* and ***word2vec*** are supported
+Note: if running ```python run.py test```:
+\ No dataset or model is to be specified. \\
+
+If running ``python run.py data```:
+\ ONLY datasets of **nyt** and **20news** are supported.
+
+Example commands include: \
+``` python run.py test ``` \
+``` python run.py data nyt coarse ``` \
+``` python run.py data 20news fine ``` \\
+
