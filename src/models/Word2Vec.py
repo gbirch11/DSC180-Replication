@@ -8,7 +8,11 @@ from copy import copy
 
 def Word2Vec(sentences, labels, seed_words, dataset):
     tokenized_sentences = tokenize(sentences, dataset)
-    model = word2vec.Word2Vec(tokenized_sentences, epochs=25, workers = 24, min_count = 5, window = 5, sample=1e-3)
+    ## test dataset does not have many repeating, frequent words (small sentences )
+    if dataset == 'test':
+        model = word2vec.Word2Vec(tokenized_sentences, epochs=25, workers = 24, min_count = 1, window = 5, sample=1e-3)
+    else:
+        model = word2vec.Word2Vec(tokenized_sentences, epochs=25, workers = 24, min_count = 5, window = 5, sample=1e-3)
     seed_weights = get_seed_weights(seed_words, model)
     doc_weights = get_doc_weights(tokenized_sentences, model)
     preds = getPrediction(doc_weights, seed_weights)
