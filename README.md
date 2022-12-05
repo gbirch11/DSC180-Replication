@@ -18,10 +18,10 @@ To run this project, run command;
 python run.py [test] [data] [dataset] 
 ```
 Note: if running ```python run.py test```: \
-No dataset or model is to be specified. \
+No dataset or model is to be specified. 
 
-If running ``python run.py data```: \
-ONLY datasets of **nyt** and **20news** are supported. \
+If running ```python run.py data```: \
+ONLY datasets of **nyt** and **20news** are supported. 
 
 Example commands include: \
 ``` python run.py test ``` \
