@@ -32,23 +32,23 @@ Example commands include: \
 * **data** ---- contains data to run this project, compressed in form of .pkl files for data and .json for seed words
     * **nyt**
         * **coarse**
-            * df.pkl
-            * seedwords.json
+            * ```df.pkl```
+            * ```seedwords.json```
         * **fine**
             * ...
     * **20news**
         * ...
 * **src**
     * **dataset**
-        * read_data.py ---- contains method to read data
+        * ```read_data.py``` ---- contains method to read data
     * **models**
-        * TFIDF.py ---- TFIDF implementation and prediction
-        * Word2Vec.py ---- Word2Vec implementation and prediction
+        * ```TFIDF.py``` ---- TFIDF implementation and prediction
+        * ```Word2Vec.py``` ---- Word2Vec implementation and prediction
     * **util** ---- contains helper functions
-        * util.py ---- insurance that stopwords from nltk are downloaded
+        * ```util.py``` ---- insurance that stopwords from nltk are downloaded
 * **test**
     * **testdata**
-        * data.pkl
-        * seedwords.json
-* Dockerfile ---- environment image
-* run.py ---- main run script for project
+        * ```data.pkl```
+        * ```seedwords.json```
+* ```Dockerfile``` ---- environment image
+* ```run.py``` ---- main run script for project
