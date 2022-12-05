@@ -4,9 +4,11 @@ import sys
 from src.dataset.read_data import *
 from src.models.TFIDF import *
 from src.models.Word2Vec import *
-
+from src.util.util import *
 
 def main(targets):
+    ## Generate stop words first.
+    generate_stop_words()
     if 'data' in targets:
         ## Check which dataset, make sure its valid
         ## Check which version (coarse or fine), make sure its valid
