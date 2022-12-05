@@ -15,13 +15,14 @@ Each dataset should contain following files:
 ## Running the Project
 To run this project, run command;
 ```
-python run.py [test | data] [dataset] 
+python run.py [test | data] [dataset] [grain]
 ```
 Note: If running ```python run.py test``` \
-No dataset needs to be specified. 
+No dataset or grain needs to be specified. 
 
 If running ```python run.py data```: \
-ONLY datasets of **nyt** and **20news** are supported. 
+ONLY datasets of **nyt** and **20news** are supported. \
+ONLY grains of **coarse** and **fine** are supported
 
 Example commands include: \
 ``` python run.py test ``` \
