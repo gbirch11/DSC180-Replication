@@ -1,0 +1,48 @@
+{
+    "animals":
+    [
+        "dog",
+        "cat",
+        "bird",
+        "bear",
+        "deer"
+    ],
+
+    "colors":
+    [
+        "red",
+        "blue",
+        "white",
+        "green",
+        "yellow"
+    ],
+
+    "space":
+    [
+        "mars",
+        "galaxy",
+        "rocket",
+        "stars",
+        "universe"
+    ],
+
+    "cars":
+    [
+        "toyota",
+        "bmw",
+        "ford",
+        "nissan",
+        "tesla"
+    ],
+
+    "fruit":
+    [
+        "apple",
+        "banana",
+        "orange",
+        "strawberry",
+        "peach"
+    ]
+
+
+}
