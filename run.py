@@ -22,19 +22,50 @@ def main(targets):
         seeds_dir = '/data/{}/{}/seedwords.json'.format(dataset, grained)
         sentences, labels, seeds = read_data(data_dir, seeds_dir)
 
+        ## Print dataset used
+        print('Dataset = {}'.format(dataset.upper()))
         ## TF-IDF
         macro_TFIDF, micro_TFIDF = TFIDF(sentences, labels, seeds)
-        print('{} dataset with {} grained data has {} macro f1-score and {} micro f1-score with model TFIDF'.format(dataset,
-         grained, macro_TFIDF, micro_TFIDF))
+        print('------------------------------------')
+        print('Model: TF-IDF')
+        print('{} grained data'.format(grained))
+        print('Micro F1 Score = {}'.format(micro_TFIDF))
+        print('Macro F1 Score = {}'.format(macro_TFIDF))
+        print('------------------------------------')
+        print('\n')
 
         ## Word2Vec
         macro_Word2Vec, micro_Word2Vec = Word2Vec(sentences, labels, seeds, dataset)
-        print('{} dataset with {} grained data has {} macro f1-score and {} micro f1-score with model Word2Vec'.format(dataset,
-         grained, macro_Word2Vec, micro_Word2Vec))
-    if 'test' in targets:
-        data_dir = '/test/testdata/test.csv'
-        seeds_dir = '/test/testdata/seeds.json'
+        print('------------------------------------')
+        print('Model: Word2Vec')
+        print('{} grained data'.format(grained))
+        print('Micro F1 Score = {}'.format(micro_Word2Vec))
+        print('Macro F1 Score = {}'.format(macro_Word2Vec))
+        print('------------------------------------')
 
+    elif 'test' in targets:
+        data_dir = '/test/testdata/data.pkl'
+        seeds_dir = '/test/testdata/seedwords.json'
+
+        print('Dataset = Test')
+        sentences, labels, seeds = read_data(data_dir, seeds_dir)
+        ## TF-IDF
+        macro_TFIDF, micro_TFIDF = TFIDF(sentences, labels, seeds)
+        print('------------------------------------')
+        print('Model: TF-IDF')
+        print('Micro F1 Score = {}'.format(micro_TFIDF))
+        print('Macro F1 Score = {}'.format(macro_TFIDF))
+        print('------------------------------------')
+        print('\n')
+
+
+        ## Word2Vec
+        macro_Word2Vec, micro_Word2Vec = Word2Vec(sentences, labels, seeds, 'test')
+        print('------------------------------------')
+        print('Model: Word2Vec')
+        print('Micro F1 Score = {}'.format(micro_Word2Vec))
+        print('Macro F1 Score = {}'.format(macro_Word2Vec))
+        print('------------------------------------')
 
 
 if __name__ == '__main__':
