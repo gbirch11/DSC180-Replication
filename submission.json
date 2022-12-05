@@ -1,0 +1,4 @@
+{
+    "dockerhub-id": "gbirch11/dsc180-replication",
+    "build_script": "python run.py"
+}
