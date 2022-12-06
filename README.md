@@ -13,6 +13,12 @@ Each dataset should contain following files:
       * MUST be named seedwords.json
 
 ## Running the Project
+**DSMLP Command**
+``` 
+launch.sh -i gbirch11/dsc180-replication [-m d]
+```
+Note: -m is an optional argumen to include more RAM on the machine; consider setting $d$ to 16 or 32 for faster processing \
+<br> <br>
 To run this project, execute the following command;
 ```
 python run.py [test | data] [dataset] [grain]
