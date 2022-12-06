@@ -24,10 +24,10 @@ To run this project, execute the following command;
 python run.py [test | data] [dataset] [grain]
 ```
 Note: If running ```python run.py test``` \
-No dataset or grain needs to be specified. 
+No dataset or grain needs to be specified
 
 If running ```python run.py data```: \
-ONLY datasets of **nyt** and **20news** are supported. \
+ONLY datasets of **nyt** and **20news** are supported \
 ONLY grains of **coarse** and **fine** are supported
 
 Example commands include: \
